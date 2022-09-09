@@ -14,7 +14,7 @@
         @routes
         @viteReactRefresh
         @vite([
-            'resources/js/jquery-1.12.4.min.js',
+            'resources/js/jquery.min.js',
             'resources/js/bootstrap.min.js',
             'resources/js/app.jsx'
         ])
