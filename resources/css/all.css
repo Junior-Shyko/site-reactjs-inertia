@@ -93,7 +93,7 @@ header {
 
 .header-default .main-menu-wrap {
     height: 60px;
-    top: 25px;
+    top: 27px;
     width: 100%;
     background: #535456;
 }
@@ -155,8 +155,8 @@ header {
 }
 
 .header-default .member-actions .button {
-    padding: 20px 20px 20px 40px;
-    letter-spacing: 0.4px;
+    padding: 20px 20px 20px 40px !important;
+    letter-spacing: 0.4px !important;
     font-size: 14px;
     border-radius: 0;
 }
@@ -247,6 +247,82 @@ header {
  	background:#21252f;
  }
  .nav.navbar-nav li .sub-menu li:hover .sub-menu { display:block; }
+
+ /* BUTTONS */
+ .button, input[type="submit"] {
+    font-family:'Raleway', Helvetica, Arial;
+    font-size:15px;
+    font-weight:600;
+    padding:10px 35px 10px 35px;
+    color:white;
+    border-radius:3px;
+    border:none;
+    background-color:#FFB400;
+    display:inline-block;
+    width:auto;
+    cursor:pointer;
+    transition: all 0.2s linear;
+}
+
+.button:hover, input[type="submit"]:hover, .button.grey:hover {
+    color:white;
+    text-decoration:none;
+    background-color:#48a0dc;
+}
+
+.btn_search_advanced {
+    font-family:'Raleway', Helvetica, Arial;
+    font-size:15px;
+    font-weight:600;
+    padding:10px 35px 10px 35px;
+    color:white;
+    border-radius:3px;
+    border:none;
+    background-color: transparent;
+    display:inline-block;
+    width:auto;
+    cursor:pointer;
+    transition: all 0.2s linear;
+    border: 1px solid;
+}
+
+.btn_search_advanced:hover, input[type="submit"]:hover, .button.grey:hover {
+    color:white;
+    text-decoration:none;
+    background-color:#48a0dc;
+}
+.button.alt { background-color:#4fba6f; }
+.button.alt:hover { background-color:#5fc97e; }
+
+.button.small {
+    padding:6px 23px 6px 23px;
+    font-size:12px;
+}
+
+.button.large {
+    padding:12px 45px 12px 45px;
+    font-size:17px;
+}
+
+.button.grey { color:#8da9b9; cursor:auto; background-color:#cbdfea; }
+
+.button-icon { position:relative; padding-left:56px; padding-right:25px; }
+.button-icon.small { padding-left:38px; padding-right:15px; }
+.button-icon.large { padding-left:70px; padding-right:35px; }
+.button-icon .fa {
+    background:rgba(0, 0, 0, 0.1);
+    position:absolute;
+    left:0;
+    top:0;
+    border-radius:2px;
+    height:100%;
+    width:38px;
+    text-align:center;
+    padding-top:13px;
+    font-size:13px;
+}
+.button-icon.small .fa { padding-top:8px; width:27px; }
+.button-icon.large .fa { padding-top:15px; font-size:16px; width:45px; }
 
 /*media screen*/
 @media screen and (max-width: 990px) {

@@ -93,28 +93,46 @@ export default Header => {
                         <Navbar.Toggle />
                     </Navbar.Header>
                     <Navbar.Collapse className="main-menu-wrap">
+                        <div className="container-fixed">
+                           
+                        
                         <Nav>
                             <NavItem eventKey={1} href="#">
-                                Link
+                                Home
                             </NavItem>
-                            <NavItem eventKey={2} href="#">
-                                Link
-                            </NavItem>
-                            <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                            
+                            <NavDropdown eventKey={3} title="A Espíndola" id="basic-nav-dropdown">
                                 <MenuItem eventKey={3.1}>Action</MenuItem>
                                 <MenuItem eventKey={3.2}>Another action</MenuItem>
                                 <MenuItem eventKey={3.3}>Something else here</MenuItem>
                                 <MenuItem divider />
                                 <MenuItem eventKey={3.3}>Separated link</MenuItem>
                             </NavDropdown>
+                            <NavItem eventKey={2} href="#">
+                                Serviços
+                            </NavItem>
+                            <NavItem eventKey={4} href="#">
+                                Área do Cliente
+                            </NavItem>
+                            <NavItem eventKey={5} href="#">
+                                Perguntas Frequentes
+                            </NavItem>
+                            <NavItem eventKey={5} href="#">
+                                Contato
+                            </NavItem>
                         </Nav>
+                        </div>
                         <Nav pullRight>
                             <NavItem eventKey={1} href="#">
-                                Link Right
+                            <div className="member-actions">
+                            <a  href="https://api.whatsapp.com/send?phone=5585988101166&amp;text=Gostaria de anunciar o meu imóvel" target="_blank" data-action="share/whatsapp/share" 
+                                className="button small alt button-icon">
+                                    <i className="fa fa-plus"></i>
+                                    Anuncie seu imóvel
+                            </a>
+                            </div>
                             </NavItem>
-                            <NavItem eventKey={2} href="#">
-                                Link Right
-                            </NavItem>
+                           
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
